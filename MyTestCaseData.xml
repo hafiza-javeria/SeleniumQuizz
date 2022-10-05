@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<automationexercise>
+
+<Execution>
+
+<!-- Test Case Signup-->
+
+<RegisterValid>
+<name>Hafiza</name>
+<email>qui3534zusername123@getnada.com</email>
+<password>Test@12345</password>
+<fname1>Hafiza</fname1>
+<lname2>Javeria</lname2>
+<companyy1>Contour</companyy1>
+<Address111>Gluburg 33</Address111>
+<Address222>Askri Building</Address222>
+<Stateeee1>Punjab</Stateeee1>
+<Cityyy1>Lahore</Cityyy1>
+<Zipco1>57000</Zipco1>
+<Mobilenumber1>03155826988</Mobilenumber1>
+<username>Hafiza</username>
+
+</RegisterValid>
+
+<!-- Test Case Signup-->
+
+<RegisterValidRegitserwithexisting>
+<name>Hafiza</name>
+<email>quizusername123@getnada.com</email>
+<Verifytext>Email Address already exist!</Verifytext>
+
+</RegisterValidRegitserwithexisting>
+
+<!-- Test Case Login-->
+
+<ValidCredentailsLogin>
+
+<email>quizusername123@getnada.com</email>
+<password>Test@12345</password>
+<username>Hafiza</username>
+</ValidCredentailsLogin>
+
+<!-- Test Case Login-->
+
+<Logout>
+
+<email>quizusername123@getnada.com</email>
+<password>Test@12345</password>
+<username>Hafiza</username>
+</Logout>
+	`
+</Execution>
+
+</automationexercise>

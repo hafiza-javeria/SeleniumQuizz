@@ -85,6 +85,7 @@ namespace SeleniumQuiz
         {
 
             DownloadInvoice objnew = new DownloadInvoice(obj.driver);
+          //  objnew.InvoiceDownload();
 
         }
         [TestCategory("ProductDetails")]
@@ -95,7 +96,7 @@ namespace SeleniumQuiz
 
             ProductQuantity objnew = new ProductQuantity(obj.driver);
 
-            objnew.productquantity();
+            //objnew.productquantity();
         }
         [TestCategory("Product")]
         [TestMethod]

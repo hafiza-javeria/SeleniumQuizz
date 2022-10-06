@@ -784,16 +784,16 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
 
 
 
-</script><title>CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:00:23</title>
+</script><title>CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:34:55</title>
   </head>
   <body>
     <div id="divToRefresh" class="wrapOverall">
       <div id="floatingImageBackground" class="floatingImageBackground" style="visibility: hidden;">
-        <div class="floatingImageCloseButton" onclick="hide('floatingImageBackground');"></div><img src="" id="floatingImage"></div><br><div class="StatusBar statusBarCompleted">
-        <div class="statusBarCompletedInner">
+        <div class="floatingImageCloseButton" onclick="hide('floatingImageBackground');"></div><img src="" id="floatingImage"></div><br><div class="StatusBar statusBarFailed">
+        <div class="statusBarFailedInner">
           <center>
             <h1 class="hWhite">
-              <div class="titleCenterd">CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:00:23</div>
+              <div class="titleCenterd">CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:34:55</div>
             </h1>
           </center>
         </div>
@@ -815,7 +815,7 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
               </td>
             </tr>
             <tr id="DownloadSection">
-              <td><a href="#" class="button" id="btn-download" download="CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:00:23StatusesPie.png">Save graph</a></td>
+              <td><a href="#" class="button" id="btn-download" download="CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:34:55StatusesPie.png">Save graph</a></td>
             </tr>
           </tbody>
         </table>
@@ -832,11 +832,11 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
             </tr>
             <tr>
               <th scope="row" class="column1 statusCount">Passed</th>
-              <td class="statusCount">6</td>
+              <td class="statusCount">5</td>
             </tr>
             <tr>
               <th scope="row" class="column1 statusCount">Failed</th>
-              <td class="statusCount">0</td>
+              <td class="statusCount">1</td>
             </tr>
             <tr>
               <th scope="row" class="column1 statusCount">Inconclusive</th>
@@ -861,15 +861,15 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
           <tbody>
             <tr class="odd">
               <th class="column1">Start Time</th>
-              <td>10/6/2022 10:59:48 AM</td>
+              <td>10/6/2022 11:34:45 AM</td>
             </tr>
             <tr>
               <th class="column1">End Time</th>
-              <td>10/6/2022 11:02:11 AM</td>
+              <td>10/6/2022 11:37:23 AM</td>
             </tr>
             <tr>
               <th class="column1">Duration</th>
-              <td>2.38 minutes</td>
+              <td>2.64 minutes</td>
             </tr>
           </tbody>
         </table>
@@ -893,6 +893,75 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
         </table>
       </div>
       <table id="ReportsTable">
+        <caption>All Failed Tests</caption>
+        <tbody>
+          <tr>
+            <td class="column1Failed"></td>
+            <td class="Function">
+                    Faileds
+                  </td>
+            <td class="Message" name="Id"> Tests</td>
+            <td class="ex">
+              <div class="OpenMoreButton" onclick="ShowHide('TestsContainer','Button','Show Tests','Hide Tests');">
+                <div class="MoreButtonText" id="Button">Hide Tests</div>
+              </div>
+            </td>
+          </tr>
+          <tr id="TestsContainer" class="visibleRow">
+            <td colspan="4">
+              <div id="exceptionArrow">↳</div>
+              <table>
+                <thead>
+                  <tr class="odd">
+                    <th scope="col" class="TestsTable">Time</th>
+                    <th scope="col" class="TestsTable" abbr="Status">Status</th>
+                    <th scope="col" class="TestsTable" abbr="Test">Test</th>
+                    <th scope="col" class="TestsTable" abbr="Message">Message</th>
+                    <th scope="col" class="TestsTable" abbr="Message">Owner</th>
+                    <th scope="col" class="TestsTable" abbr="Exception">Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:34:45 AM</th>
+                    <td class="failed">FAILED</td>
+                    <td class="Function">TestCase1_Register (Data Row 0)</td>
+                    <td class="Messages"><a style="float:right;" id="ID0A5B0ACStacktraceToggle" href="javascript:ShowHide('ID0A5B0ACStacktrace','ID0A5B0ACStacktraceToggle','Show Stacktrace','Hide Stacktrace');">Show Stacktrace</a>Test method SeleniumQuiz.TestCasesClass.TestCase1_Register threw exception: 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=106.0.5249.91)<br></td>
+                    <td class="Message"></td>
+                    <td class="Message">9.94 seconds</td>
+                  </tr>
+                  <tr id="ID0A5B0ACStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.&lt;.ctor&gt;b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumQuiz.BaseCommonMethods.FindElementt(By value) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\BaseCommonMethods.cs:line 58
+   at SeleniumQuiz.BaseCommonMethods.ClickAction(By loc) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\BaseCommonMethods.cs:line 128
+   at SeleniumQuiz.RegisterFunctionality.Selecttitle() in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\RegisterFunctionality.cs:line 93
+   at SeleniumQuiz.RegisterFunctionality.Regitser(String nameee, String emailll, String passwordd, String fffname, String lllname, String companyyy, String address1111, String address2222, String stateeeee, String cityyyy, String zippp, String phonenumebr, String verifyysignup) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\RegisterFunctionality.cs:line 192
+   at SeleniumQuiz.TestCasesClass.TestCase1_Register() in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\TestCasesClass.cs:line 52
+</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="ReportsTable">
         <caption>All Tests Group By Classes</caption>
         <thead>
           <tr class="odd">
@@ -908,16 +977,16 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
         <tbody>
           <tr>
             <th scope="row" class="column1">7/21/2014 10:56:45 PM</th>
-            <td class="PackageStatus"><canvas id="ID0AWD0ZDcanvas" width="100" height="25"></canvas></td>
+            <td class="PackageStatus"><canvas id="ID0ABE0EEcanvas" width="100" height="25"></canvas></td>
             <td class="Function">SeleniumQuiz.TestCasesClass</td>
-            <td class="Message" name="ID0AWD0ZDId">6 Tests</td>
+            <td class="Message" name="ID0ABE0EEId">6 Tests</td>
             <td class="ex">
-              <div class="OpenMoreButton" onclick="ShowHide('ID0AWD0ZDTestsContainer','ID0AWD0ZDButton','Show Tests','Hide Tests');">
-                <div class="MoreButtonText" id="ID0AWD0ZDButton">Show Tests</div>
+              <div class="OpenMoreButton" onclick="ShowHide('ID0ABE0EETestsContainer','ID0ABE0EEButton','Show Tests','Hide Tests');">
+                <div class="MoreButtonText" id="ID0ABE0EEButton">Show Tests</div>
               </div>
             </td>
           </tr>
-          <tr id="ID0AWD0ZDTestsContainer" class="hiddenRow">
+          <tr id="ID0ABE0EETestsContainer" class="hiddenRow">
             <td colspan="5">
               <div id="exceptionArrow">↳</div>
               <table>
@@ -933,119 +1002,131 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
                 </thead>
                 <tbody>
                   <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 11:01:21 AM</th>
-                    <td class="passed">PASSED</td>
-                    <td class="Function">TestCase6_ProductQuantity (Data Row 0)</td>
-                    <td class="Messages"></td>
-                    <td class="Message"></td>
-                    <td class="Message">11.53 seconds</td>
-                  </tr>
-                  <tr id="ID0AID0LDStacktrace" class="hiddenRow">
-                    <td colspan="6">
-                      <div id="exceptionArrow">↳</div>
-                      <table>
-                        <tbody>
-                          <tr class="visibleRow">
-                            <td class="ex">
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 11:01:32 AM</th>
-                    <td class="passed">PASSED</td>
-                    <td class="Function">TestCase7_Regitserwithexisting (Data Row 0)</td>
-                    <td class="Messages"></td>
-                    <td class="Message"></td>
-                    <td class="Message">21.18 seconds</td>
-                  </tr>
-                  <tr id="ID0A4D0AEStacktrace" class="hiddenRow">
-                    <td colspan="6">
-                      <div id="exceptionArrow">↳</div>
-                      <table>
-                        <tbody>
-                          <tr class="visibleRow">
-                            <td class="ex">
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 11:00:23 AM</th>
-                    <td class="passed">PASSED</td>
-                    <td class="Function">TestCase2_Login (Data Row 0)</td>
-                    <td class="Messages"></td>
-                    <td class="Message"></td>
-                    <td class="Message">36.41 seconds</td>
-                  </tr>
-                  <tr id="ID0ASE0VEStacktrace" class="hiddenRow">
-                    <td colspan="6">
-                      <div id="exceptionArrow">↳</div>
-                      <table>
-                        <tbody>
-                          <tr class="visibleRow">
-                            <td class="ex">
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 10:59:49 AM</th>
-                    <td class="passed">PASSED</td>
-                    <td class="Function">TestCase1_Register (Data Row 0)</td>
-                    <td class="Messages"></td>
-                    <td class="Message"></td>
-                    <td class="Message">33.45 seconds</td>
-                  </tr>
-                  <tr id="ID0AHF0KFStacktrace" class="hiddenRow">
-                    <td colspan="6">
-                      <div id="exceptionArrow">↳</div>
-                      <table>
-                        <tbody>
-                          <tr class="visibleRow">
-                            <td class="ex">
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 11:01:53 AM</th>
-                    <td class="passed">PASSED</td>
-                    <td class="Function">TestCase8_Scrolldownup</td>
-                    <td class="Messages"></td>
-                    <td class="Message"></td>
-                    <td class="Message">17.12 seconds</td>
-                  </tr>
-                  <tr id="ID0A3F06FStacktrace" class="hiddenRow">
-                    <td colspan="6">
-                      <div id="exceptionArrow">↳</div>
-                      <table>
-                        <tbody>
-                          <tr class="visibleRow">
-                            <td class="ex">
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr class="Test">
-                    <th scope="row" class="column1">10/6/2022 11:00:59 AM</th>
+                    <th scope="row" class="column1">10/6/2022 11:35:33 AM</th>
                     <td class="passed">PASSED</td>
                     <td class="Function">TestCase3_logout (Data Row 0)</td>
                     <td class="Messages"></td>
                     <td class="Message"></td>
-                    <td class="Message">21.46 seconds</td>
+                    <td class="Message">1.08 minutes</td>
                   </tr>
-                  <tr id="ID0ARG0UGStacktrace" class="hiddenRow">
+                  <tr id="ID0ATD0WDStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:34:55 AM</th>
+                    <td class="passed">PASSED</td>
+                    <td class="Function">TestCase2_Login (Data Row 0)</td>
+                    <td class="Messages"></td>
+                    <td class="Message"></td>
+                    <td class="Message">37.27 seconds</td>
+                  </tr>
+                  <tr id="ID0AIE0LEStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:34:45 AM</th>
+                    <td class="failed">FAILED</td>
+                    <td class="Function">TestCase1_Register (Data Row 0)</td>
+                    <td class="Messages"><a style="float:right;" id="ID0A4E0AFStacktraceToggle" href="javascript:ShowHide('ID0A4E0AFStacktrace','ID0A4E0AFStacktraceToggle','Show Stacktrace','Hide Stacktrace');">Show Stacktrace</a>Test method SeleniumQuiz.TestCasesClass.TestCase1_Register threw exception: 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=106.0.5249.91)<br></td>
+                    <td class="Message"></td>
+                    <td class="Message">9.94 seconds</td>
+                  </tr>
+                  <tr id="ID0A4E0AFStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.&lt;.ctor&gt;b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at SeleniumQuiz.BaseCommonMethods.FindElementt(By value) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\BaseCommonMethods.cs:line 58
+   at SeleniumQuiz.BaseCommonMethods.ClickAction(By loc) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\BaseCommonMethods.cs:line 128
+   at SeleniumQuiz.RegisterFunctionality.Selecttitle() in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\RegisterFunctionality.cs:line 93
+   at SeleniumQuiz.RegisterFunctionality.Regitser(String nameee, String emailll, String passwordd, String fffname, String lllname, String companyyy, String address1111, String address2222, String stateeeee, String cityyyy, String zippp, String phonenumebr, String verifyysignup) in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\RegisterFunctionality.cs:line 192
+   at SeleniumQuiz.TestCasesClass.TestCase1_Register() in C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\TestCasesClass.cs:line 52
+</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:36:38 AM</th>
+                    <td class="passed">PASSED</td>
+                    <td class="Function">TestCase6_ProductQuantity (Data Row 0)</td>
+                    <td class="Messages"></td>
+                    <td class="Message"></td>
+                    <td class="Message">10.20 seconds</td>
+                  </tr>
+                  <tr id="ID0ASF0VFStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:36:48 AM</th>
+                    <td class="passed">PASSED</td>
+                    <td class="Function">TestCase7_Regitserwithexisting (Data Row 0)</td>
+                    <td class="Messages"></td>
+                    <td class="Message"></td>
+                    <td class="Message">19.27 seconds</td>
+                  </tr>
+                  <tr id="ID0AHG0KGStacktrace" class="hiddenRow">
+                    <td colspan="6">
+                      <div id="exceptionArrow">↳</div>
+                      <table>
+                        <tbody>
+                          <tr class="visibleRow">
+                            <td class="ex">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr class="Test">
+                    <th scope="row" class="column1">10/6/2022 11:37:07 AM</th>
+                    <td class="passed">PASSED</td>
+                    <td class="Function">TestCase8_Scrolldownup</td>
+                    <td class="Messages"></td>
+                    <td class="Message"></td>
+                    <td class="Message">15.98 seconds</td>
+                  </tr>
+                  <tr id="ID0A3G06GStacktrace" class="hiddenRow">
                     <td colspan="6">
                       <div id="exceptionArrow">↳</div>
                       <table>
@@ -1062,7 +1143,7 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
               </table>
             </td>
           </tr><script>
-                  CalculateTestsStatuses('ID0AWD0ZDTestsContainer','ID0AWD0ZDcanvas');
+                  CalculateTestsStatuses('ID0ABE0EETestsContainer','ID0ABE0EEcanvas');
                 </script></tbody>
       </table>
       <Table>
@@ -1078,44 +1159,44 @@ function CalculateTestsStatuses(testContaineId, canvasId) {
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="column1">10/6/2022 11:00:23 AM</th>
-            <td class="passed">PASSED</td>
-            <td class="Function slowest">SeleniumQuiz.TestCasesClass
-                      .TestCase2_Login (Data Row 0)</td>
-            <td></td>
-            <td class="Message slowest">36.41 seconds</td>
-          </tr>
-          <tr>
-            <th scope="row" class="column1">10/6/2022 10:59:49 AM</th>
-            <td class="passed">PASSED</td>
-            <td class="Function slowest">SeleniumQuiz.TestCasesClass
-                      .TestCase1_Register (Data Row 0)</td>
-            <td></td>
-            <td class="Message slowest">33.45 seconds</td>
-          </tr>
-          <tr>
-            <th scope="row" class="column1">10/6/2022 11:00:59 AM</th>
+            <th scope="row" class="column1">10/6/2022 11:35:33 AM</th>
             <td class="passed">PASSED</td>
             <td class="Function slowest">SeleniumQuiz.TestCasesClass
                       .TestCase3_logout (Data Row 0)</td>
             <td></td>
-            <td class="Message slowest">21.46 seconds</td>
+            <td class="Message slowest">1.08 minutes</td>
           </tr>
           <tr>
-            <th scope="row" class="column1">10/6/2022 11:01:32 AM</th>
+            <th scope="row" class="column1">10/6/2022 11:34:55 AM</th>
+            <td class="passed">PASSED</td>
+            <td class="Function slowest">SeleniumQuiz.TestCasesClass
+                      .TestCase2_Login (Data Row 0)</td>
+            <td></td>
+            <td class="Message slowest">37.27 seconds</td>
+          </tr>
+          <tr>
+            <th scope="row" class="column1">10/6/2022 11:36:48 AM</th>
             <td class="passed">PASSED</td>
             <td class="Function slowest">SeleniumQuiz.TestCasesClass
                       .TestCase7_Regitserwithexisting (Data Row 0)</td>
             <td></td>
-            <td class="Message slowest">21.18 seconds</td>
+            <td class="Message slowest">19.27 seconds</td>
           </tr>
           <tr>
-            <th scope="row" class="column1">10/6/2022 11:01:53 AM</th>
+            <th scope="row" class="column1">10/6/2022 11:37:07 AM</th>
             <td class="passed">PASSED</td>
             <td class="Function slowest">SeleniumQuiz.TestCasesClass
                       .TestCase8_Scrolldownup</td>
             <td></td>
-            <td class="Message slowest">17.12 seconds</td>
+            <td class="Message slowest">15.98 seconds</td>
+          </tr>
+          <tr>
+            <th scope="row" class="column1">10/6/2022 11:36:38 AM</th>
+            <td class="passed">PASSED</td>
+            <td class="Function slowest">SeleniumQuiz.TestCasesClass
+                      .TestCase6_ProductQuantity (Data Row 0)</td>
+            <td></td>
+            <td class="Message slowest">10.20 seconds</td>
           </tr>
           <tr>
             <td colspan="5">

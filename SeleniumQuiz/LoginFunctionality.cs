@@ -1,7 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AventStack.ExtentReports;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,19 +50,34 @@ namespace SeleniumQuiz
         }
         public void LoginwithValid(string emaill, string pass, string verifyysignup)
         {
+            string path = @"C:\Users\CA\source\repos\SeleniumQuiz\Report\Extent\";
             OpenURL();
+            exChildTest.Log(Status.Pass, "Step 1: Open URL https://automationexercise.com/");
+            Screenshot image_username = ((ITakesScreenshot)driver).GetScreenshot();
+            image_username.SaveAsFile(path + "Step 1.png", ScreenshotImageFormat.Png);
             homepagevisible(HomePage);
+            exChildTest.Log(Status.Pass, "Step 2: Verify that home page is visible successfully");
+            Screenshot image_username1 = ((ITakesScreenshot)driver).GetScreenshot();
+            image_username1.SaveAsFile(path + "Step 2.png", ScreenshotImageFormat.Png);
             SelectloginMethod();
+            exChildTest.Log(Status.Pass, "Step 3: Click on 'Signup / Login' button");
             assertelement(verifytitle, "Login to your account");
+            exChildTest.Log(Status.Pass, "Step 4: Verify 'Login to your account' is visible");
             Wait(email);
             EnterEmail(emaill);
+            exChildTest.Log(Status.Pass, "Step 5: Enter correct email address");
             Wait(password);
             EnterPassword(pass);
+            exChildTest.Log(Status.Pass, "Step 6: Enter correct password");
             Wait(loginButton);
             ClickLoginBtn();
+            exChildTest.Log(Status.Pass, "Step 7: Click 'Signup' button");
             string actualvalue = GetText(verify);
             Assert.AreEqual(verifyysignup, actualvalue);
+            exChildTest.Log(Status.Pass, "Step 8: Verify that 'Logged in as username' is visible");
             ClickAction(Del);
+            exChildTest.Log(Status.Pass, "Step 9: Click 'Delete Account' button");
+            exChildTest.Log(Status.Pass, "Step 10: Verify that 'ACCOUNT DELETED!' is visible");
             Threadwait();
             DriverClose();
         }

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7e681df8-55b6-47c6-ad05-581e78b7c526" name="CodeAutomation@DESKTOP-TLVEPS6 2022-10-06 11:12:29" runUser="DESKTOP-TLVEPS6\CodeAutomation" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-06T11:12:29.1844753+05:00" queuing="2022-10-06T11:12:29.1844753+05:00" start="2022-10-06T11:12:00.7454688+05:00" finish="2022-10-06T11:14:21.3740125+05:00" />
+  <TestSettings name="default" id="31413891-daf5-4b21-a08f-f42ae43452cb">
+    <Deployment runDeploymentRoot="CodeAutomation_DESKTOP-TLVEPS6_2022-10-06_11_12_29" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7a4b05b0-efb2-4bcc-a0ef-9254efde6ffb" testId="d52f6fae-d74b-4009-a7e7-33169d9ac7fd" testName="TestCase1_Register (Data Row 0)" computerName="DESKTOP-TLVEPS6" duration="00:00:27.2613965" startTime="2022-10-06T11:12:01.3539975+05:00" endTime="2022-10-06T11:12:29.1636512+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a4b05b0-efb2-4bcc-a0ef-9254efde6ffb" />
+    <UnitTestResult executionId="0176babd-887c-48f8-a86e-d3988e078b51" testId="25fca5f9-226f-497b-865c-4e8ff0df28b9" testName="TestCase8_Scrolldownup" computerName="DESKTOP-TLVEPS6" duration="00:00:17.5877628" startTime="2022-10-06T11:14:03.6413598+05:00" endTime="2022-10-06T11:14:21.2300268+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0176babd-887c-48f8-a86e-d3988e078b51" />
+    <UnitTestResult executionId="795a4470-f1e1-4fe6-a4d4-1fb317f1d6e0" testId="79725d42-fd47-4557-9a8d-2d4f54fe202e" testName="TestCase2_Login (Data Row 0)" computerName="DESKTOP-TLVEPS6" duration="00:00:39.0495404" startTime="2022-10-06T11:12:29.1771282+05:00" endTime="2022-10-06T11:13:08.2275607+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="795a4470-f1e1-4fe6-a4d4-1fb317f1d6e0" />
+    <UnitTestResult executionId="99e503c1-9e4c-4503-b22e-c89f0a6a7e99" testId="7a8ad9d3-8c5c-4640-a626-b0769002412d" testName="TestCase7_Regitserwithexisting (Data Row 0)" computerName="DESKTOP-TLVEPS6" duration="00:00:20.1561141" startTime="2022-10-06T11:13:43.4843221+05:00" endTime="2022-10-06T11:14:03.6413598+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99e503c1-9e4c-4503-b22e-c89f0a6a7e99" />
+    <UnitTestResult executionId="26ebda8f-cfbc-4a7e-bfe1-d7371b87706f" testId="808bcf5e-dd36-483a-bfd2-d269e3fc1672" testName="TestCase6_ProductQuantity (Data Row 0)" computerName="DESKTOP-TLVEPS6" duration="00:00:10.3141719" startTime="2022-10-06T11:13:33.1686269+05:00" endTime="2022-10-06T11:13:43.4843221+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26ebda8f-cfbc-4a7e-bfe1-d7371b87706f" />
+    <UnitTestResult executionId="5d7c8005-096d-4cb3-845d-c7c7799e8d3e" testId="fee7beda-049f-4873-83f9-24489539847e" testName="TestCase3_logout (Data Row 0)" computerName="DESKTOP-TLVEPS6" duration="00:00:24.9398570" startTime="2022-10-06T11:13:08.2275607+05:00" endTime="2022-10-06T11:13:33.1686269+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d7c8005-096d-4cb3-845d-c7c7799e8d3e" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestCase7_Regitserwithexisting (Data Row 0)" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="7a8ad9d3-8c5c-4640-a626-b0769002412d">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Register" />
+      </TestCategory>
+      <Execution id="99e503c1-9e4c-4503-b22e-c89f0a6a7e99" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase7_Regitserwithexisting" />
+    </UnitTest>
+    <UnitTest name="TestCase6_ProductQuantity (Data Row 0)" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="808bcf5e-dd36-483a-bfd2-d269e3fc1672">
+      <TestCategory>
+        <TestCategoryItem TestCategory="ProductDetails" />
+      </TestCategory>
+      <Execution id="26ebda8f-cfbc-4a7e-bfe1-d7371b87706f" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase6_ProductQuantity" />
+    </UnitTest>
+    <UnitTest name="TestCase3_logout (Data Row 0)" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="fee7beda-049f-4873-83f9-24489539847e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Logout" />
+      </TestCategory>
+      <Execution id="5d7c8005-096d-4cb3-845d-c7c7799e8d3e" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase3_logout" />
+    </UnitTest>
+    <UnitTest name="TestCase2_Login (Data Row 0)" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="79725d42-fd47-4557-9a8d-2d4f54fe202e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Login" />
+      </TestCategory>
+      <Execution id="795a4470-f1e1-4fe6-a4d4-1fb317f1d6e0" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase2_Login" />
+    </UnitTest>
+    <UnitTest name="TestCase1_Register (Data Row 0)" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="d52f6fae-d74b-4009-a7e7-33169d9ac7fd">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Register" />
+      </TestCategory>
+      <Execution id="7a4b05b0-efb2-4bcc-a0ef-9254efde6ffb" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase1_Register" />
+    </UnitTest>
+    <UnitTest name="TestCase8_Scrolldownup" storage="c:\users\ca\source\repos\seleniumquiz\seleniumquiz\bin\debug\seleniumquiz.dll" id="25fca5f9-226f-497b-865c-4e8ff0df28b9">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Scroll" />
+      </TestCategory>
+      <Execution id="0176babd-887c-48f8-a86e-d3988e078b51" />
+      <TestMethod codeBase="C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll" adapterTypeName="executor://mstestadapter/v2" className="SeleniumQuiz.TestCasesClass" name="TestCase8_Scrolldownup" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d52f6fae-d74b-4009-a7e7-33169d9ac7fd" executionId="7a4b05b0-efb2-4bcc-a0ef-9254efde6ffb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25fca5f9-226f-497b-865c-4e8ff0df28b9" executionId="0176babd-887c-48f8-a86e-d3988e078b51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79725d42-fd47-4557-9a8d-2d4f54fe202e" executionId="795a4470-f1e1-4fe6-a4d4-1fb317f1d6e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a8ad9d3-8c5c-4640-a626-b0769002412d" executionId="99e503c1-9e4c-4503-b22e-c89f0a6a7e99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="808bcf5e-dd36-483a-bfd2-d269e3fc1672" executionId="26ebda8f-cfbc-4a7e-bfe1-d7371b87706f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fee7beda-049f-4873-83f9-24489539847e" executionId="5d7c8005-096d-4cb3-845d-c7c7799e8d3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

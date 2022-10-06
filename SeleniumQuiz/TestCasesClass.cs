@@ -31,7 +31,8 @@ namespace SeleniumQuiz
         public void TestCase1_Register()
         {
             exParentTest = extentReports.CreateTest(TestContext.TestName);
-            exChildTest = exParentTest.CreateNode("Login");
+            exChildTest = exParentTest.CreateNode("TestCase1_Register");
+
             RegisterFunctionality RegObject = new RegisterFunctionality(obj.driver);
 
             string valuename = TestContext.DataRow["name"].ToString();
@@ -56,6 +57,9 @@ namespace SeleniumQuiz
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "ValidCredentailsLogin", DataAccessMethod.Sequential)]
         public void TestCase2_Login()
         {
+            exParentTest = extentReports.CreateTest(TestContext.TestName);
+            exChildTest = exParentTest.CreateNode("TestCase2_Login");
+
             LoginFunctionality LogObject = new LoginFunctionality(obj.driver);
             string validemail = TestContext.DataRow["email"].ToString();
             string validPass = TestContext.DataRow["password"].ToString();
@@ -74,20 +78,33 @@ namespace SeleniumQuiz
             string valueusername = TestContext.DataRow["username"].ToString();
             logout1.Logout(validemail, validPass, valueusername);
         }
+        [TestCategory("Product")]
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "RegisterValidRegitserwithexisting", DataAccessMethod.Sequential)]
+        public void TestCase4_DownloadInvoice()
+        {
+
+            DownloadInvoice objnew = new DownloadInvoice(obj.driver);
+
+        }
         [TestCategory("ProductDetails")]
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "RegisterValidRegitserwithexisting", DataAccessMethod.Sequential)]
-        public void TestCase6_ProductQuantity()
+        public void TestCase5_ProductQuantity()
         {
 
             ProductQuantity objnew = new ProductQuantity(obj.driver);
 
             objnew.productquantity();
+        }
+        [TestCategory("Product")]
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "RegisterValidRegitserwithexisting", DataAccessMethod.Sequential)]
+        public void TestCase6_DownloadInvoice()
+        {
 
-            //string valuename = TestContext.DataRow["name"].ToString();
-            //string valueemail = TestContext.DataRow["email"].ToString();
-            //string Verifytext = TestContext.DataRow["Verifytext"].ToString();
-            // RegObject1.Regitserwithexisting(valuename, valueemail, Verifytext);
+            PlaceOrderRegisterwhileCheckout objnew2 = new PlaceOrderRegisterwhileCheckout(obj.driver);
+
         }
         [TestCategory("Register")]
         [TestMethod]

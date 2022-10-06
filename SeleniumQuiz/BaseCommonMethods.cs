@@ -13,10 +13,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Support.Extensions;
+using AventStack.ExtentReports;
 
 namespace SeleniumQuiz
 {
-    public class BaseCommonMethods
+    public class BaseCommonMethods:ExtentReport
     {
         public ExtentHtmlReporter report = new ExtentHtmlReporter("C://Users//CA//source//repos//SeleniumQuiz//Report//" + DateTime.Now.ToString("ddMMyyyy"));
         public AventStack.ExtentReports.ExtentReports extent = new AventStack.ExtentReports.ExtentReports();
@@ -39,6 +40,7 @@ namespace SeleniumQuiz
         }
         public void OpenURL() // Open Website with Link 
         {
+
             driver.Navigate().GoToUrl("https://automationexercise.com/");
         }
         public void homepagevisible(By value)
@@ -145,6 +147,6 @@ namespace SeleniumQuiz
         {
            driver.Close();
         }
-
+       
     }
 }

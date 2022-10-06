@@ -12,11 +12,17 @@ namespace SeleniumQuiz
         BaseCommonMethods obj = new BaseCommonMethods();
         public TestContext instance;
         public TestContext TestContext { get; set; }
+        [ClassInitialize]
+        public static void GetTestContext(TestContext test)
+        {
+            LogReport("TestReport");
+
+        }
         [TestInitialize]
         public void Testint()
         {
             obj.driverint("Chrome");
-           // LogReport(TestContext.TestName);
+            LogReport(TestContext.TestName);
 
         }
         [TestCategory("Register")]
@@ -24,8 +30,9 @@ namespace SeleniumQuiz
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "RegisterValid", DataAccessMethod.Sequential)]
         public void TestCase1_Register()
         {
+            exParentTest = extentReports.CreateTest(TestContext.TestName);
+            exChildTest = exParentTest.CreateNode("Login");
             RegisterFunctionality RegObject = new RegisterFunctionality(obj.driver);
-           // ExtentTest test = obj.extent.CreateTest("Test Case 1: Valid Email and Password Credentails");
 
             string valuename = TestContext.DataRow["name"].ToString();
             string valueemail = TestContext.DataRow["email"].ToString();
@@ -49,9 +56,6 @@ namespace SeleniumQuiz
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "ValidCredentailsLogin", DataAccessMethod.Sequential)]
         public void TestCase2_Login()
         {
-           // exParentTest = extentReports.CreateTest(TestContext.TestName);
-           // exChildTest = exParentTest.CreateNode("TestCase2_Login");
-
             LoginFunctionality LogObject = new LoginFunctionality(obj.driver);
             string validemail = TestContext.DataRow["email"].ToString();
             string validPass = TestContext.DataRow["password"].ToString();
@@ -106,13 +110,16 @@ namespace SeleniumQuiz
             ScrollUpandDown scrObj = new ScrollUpandDown(obj.driver);
             scrObj.scroll();
         }
-
-
         [TestCleanup]
         public void Testcleanup()
         {
-            //obj.extent.Flush();
-          //  obj.driver.Quit();
+            
+          obj.driver.Quit();
+        }
+        [ClassCleanup]
+        public static void ClassCleanUp()
+        {
+            extentReports.Flush();
         }
     }
 }

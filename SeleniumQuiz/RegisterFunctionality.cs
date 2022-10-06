@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AventStack.ExtentReports;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MongoDB.Driver;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
@@ -171,36 +172,62 @@ namespace SeleniumQuiz
         public void Regitser(string nameee, string emailll,string passwordd, string fffname, string lllname, string companyyy,
             string address1111, string address2222, string stateeeee,string cityyyy, string zippp, string phonenumebr, string verifyysignup)
         {
-            OpenURL(); // Open URL
-            homepagee(); // HomePage Visibility 
-            Selectregister(); // Click on Signup/Login
+            OpenURL();
+            exChildTest.Log(Status.Pass, "Step 1: Open URL https://automationexercise.com/");
+            homepagee();
+            exChildTest.Log(Status.Pass, "Step 2: Verify that home page is visible successfully");
+            Selectregister();
+            exChildTest.Log(Status.Pass, "Step 3: Verify that home page is visible successfully");
             Wait(signupverify);
-            newusersignup(); // Veirfy New User Signup
-            Wait(Namee); // wait for element name field
-            Entername(nameee); // Enter name
-            EnterEmail(emailll); // Enter email
-            ClickSignup(); // Signup button
-            Selecttitle(); 
+            newusersignup();
+            exChildTest.Log(Status.Pass, "Step 4: Verify that home page is visible successfully");
+            Wait(Namee); 
+            Entername(nameee);
+            exChildTest.Log(Status.Pass, "Step 5: Verify that home page is visible successfully");
+            EnterEmail(emailll);
+            exChildTest.Log(Status.Pass, "Step 6: Verify that home page is visible successfully");
+            ClickSignup();
+            exChildTest.Log(Status.Pass, "Step 7: Verify that home page is visible successfully");
+            Selecttitle();
+            exChildTest.Log(Status.Pass, "Step 8: Verify that home page is visible successfully");
             EnterPassword(passwordd);
-            dropdowndayy(); 
+            exChildTest.Log(Status.Pass, "Step 9: Verify that home page is visible successfully");
+            dropdowndayy();
+            exChildTest.Log(Status.Pass, "Step 10: Verify that home page is visible successfully");
             dropdownmonthh();
+            exChildTest.Log(Status.Pass, "Step 11: Verify that home page is visible successfully");
             dropdownyearr();
+            exChildTest.Log(Status.Pass, "Step 12: Verify that home page is visible successfully");
             checkboxx();
+            exChildTest.Log(Status.Pass, "Step 13: Verify that home page is visible successfully");
             fname(fffname);
+            exChildTest.Log(Status.Pass, "Step 14: Verify that home page is visible successfully");
             lname(lllname);
+            exChildTest.Log(Status.Pass, "Step 15: Verify that home page is visible successfully");
             Companyy(companyyy);
+            exChildTest.Log(Status.Pass, "Step 16: Verify that home page is visible successfully");
             Address11(address1111);
+            exChildTest.Log(Status.Pass, "Step 17: Verify that home page is visible successfully");
             Address22(address2222);
+            exChildTest.Log(Status.Pass, "Step 18: Verify that home page is visible successfully");
             contouryy();
+            exChildTest.Log(Status.Pass, "Step 19: Verify that home page is visible successfully");
             Stateeee(stateeeee);
+            exChildTest.Log(Status.Pass, "Step 20: Verify that home page is visible successfully");
             Cityyy(cityyyy);
+            exChildTest.Log(Status.Pass, "Step 21: Verify that home page is visible successfully");
             Zipco(zippp);
+            exChildTest.Log(Status.Pass, "Step 22: Verify that home page is visible successfully");
             Mobilenumber(phonenumebr);
+            exChildTest.Log(Status.Pass, "Step 23: Verify that home page is visible successfully");
             Clickcreatebtn();
+            exChildTest.Log(Status.Pass, "Step 24: Verify that home page is visible successfully");
             Clickcpntbtn();
+            exChildTest.Log(Status.Pass, "Step 25: Verify that home page is visible successfully");
             Wait(verify);
             string actualvalue = GetText(verify);
             Assert.AreEqual(verifyysignup, actualvalue);
+            exChildTest.Log(Status.Pass, "Step 26: Verify that home page is visible successfully");
             Threadwait();
             DriverClose();
         }

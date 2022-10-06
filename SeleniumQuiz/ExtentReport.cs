@@ -11,25 +11,20 @@ namespace SeleniumQuiz
 {
     public class ExtentReport
     {
-        public static ExtentReport extentReports;
+        public static ExtentReports extentReports;
         public static ExtentTest exParentTest;
         public static ExtentTest exChildTest;
         public static string dirpath;
         public static void LogReport(string testcase)
         {
-            extentReports = new ExtentReport();
-            dirpath = @"..\..\TestExecutionReports\" + '_' + testcase;
+            extentReports = new ExtentReports();
+            dirpath = @"C:\Users\CA\source\repos\SeleniumQuiz\Report\Extent\" + '_' + testcase;
 
             ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(dirpath);
 
             htmlReporter.Config.Theme = Theme.Standard;
 
             extentReports.AttachReporter(htmlReporter);
-        }
-
-        private void AttachReporter(ExtentHtmlReporter htmlReporter)
-        {
-            throw new NotImplementedException();
         }
     }
 }

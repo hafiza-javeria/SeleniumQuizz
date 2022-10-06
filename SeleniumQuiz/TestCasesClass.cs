@@ -12,22 +12,11 @@ namespace SeleniumQuiz
         BaseCommonMethods obj = new BaseCommonMethods();
         public TestContext instance;
         public TestContext TestContext { get; set; }
-        
-        [ClassInitialize]
-        public static void GetTestContext(TestContext test)
-        {
-            LogReport("TestReport");
-        }
-        [ClassCleanup]
-        public static void ClassCleanUp()
-        {
-            extentReports.Flush();
-        }
         [TestInitialize]
         public void Testint()
         {
             obj.driverint("Chrome");
-            LogReport(TestContext.TestName);
+           // LogReport(TestContext.TestName);
 
         }
         [TestCategory("Register")]
@@ -36,7 +25,7 @@ namespace SeleniumQuiz
         public void TestCase1_Register()
         {
             RegisterFunctionality RegObject = new RegisterFunctionality(obj.driver);
-            ExtentTest test = obj.extent.CreateTest("Test Case 1: Valid Email and Password Credentails");
+           // ExtentTest test = obj.extent.CreateTest("Test Case 1: Valid Email and Password Credentails");
 
             string valuename = TestContext.DataRow["name"].ToString();
             string valueemail = TestContext.DataRow["email"].ToString();
@@ -60,8 +49,8 @@ namespace SeleniumQuiz
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "ValidCredentailsLogin", DataAccessMethod.Sequential)]
         public void TestCase2_Login()
         {
-            exParentTest = extentReports.CreateTest(TestContext.TestName);
-            exChildTest = exParentTest.CreateNode("TestCase2_Login");
+           // exParentTest = extentReports.CreateTest(TestContext.TestName);
+           // exChildTest = exParentTest.CreateNode("TestCase2_Login");
 
             LoginFunctionality LogObject = new LoginFunctionality(obj.driver);
             string validemail = TestContext.DataRow["email"].ToString();
@@ -80,6 +69,21 @@ namespace SeleniumQuiz
             string validPass = TestContext.DataRow["password"].ToString();
             string valueusername = TestContext.DataRow["username"].ToString();
             logout1.Logout(validemail, validPass, valueusername);
+        }
+        [TestCategory("ProductDetails")]
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "MyTestCaseData.xml", "RegisterValidRegitserwithexisting", DataAccessMethod.Sequential)]
+        public void TestCase6_ProductQuantity()
+        {
+
+            ProductQuantity objnew = new ProductQuantity(obj.driver);
+
+            objnew.productquantity();
+
+            //string valuename = TestContext.DataRow["name"].ToString();
+            //string valueemail = TestContext.DataRow["email"].ToString();
+            //string Verifytext = TestContext.DataRow["Verifytext"].ToString();
+            // RegObject1.Regitserwithexisting(valuename, valueemail, Verifytext);
         }
         [TestCategory("Register")]
         [TestMethod]
@@ -107,8 +111,8 @@ namespace SeleniumQuiz
         [TestCleanup]
         public void Testcleanup()
         {
-            obj.extent.Flush();
-            obj.driver.Quit();
+            //obj.extent.Flush();
+          //  obj.driver.Quit();
         }
     }
 }

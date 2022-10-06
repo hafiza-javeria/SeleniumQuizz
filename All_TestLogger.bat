@@ -2,7 +2,6 @@
 ECHO Demo Automation Executed Started.
 
 
-set testcategory=Login 
 set dllpath=C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug\SeleniumQuiz.dll
 set trxerpath=C:\Users\CA\source\repos\SeleniumQuiz\SeleniumQuiz\bin\Debug
 set SummaryReportPath=C:\Users\CA\source\repos\SeleniumQuiz\Report\
@@ -14,7 +13,7 @@ echo %filename%
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat"
 
 
-VSTest.Console.exe  %dllpath% /TestCaseFilter:"TestCategory=%testcategory%" /Logger:"trx;LogFileName=%SummaryReportPath%\%filename%.trx"
+VSTest.Console.exe  %dllpath% /Logger:"trx;LogFileName=%SummaryReportPath%\%filename%.trx"
 
 cd %trxerpath%
 

@@ -269,6 +269,7 @@
     <Compile Include="ExtentReport.cs" />
     <Compile Include="LoginFunctionality.cs" />
     <Compile Include="LogoutFunctioality.cs" />
+    <Compile Include="ProductQuantity.cs" />
     <Compile Include="RegisterFunctionality.cs" />
     <Compile Include="ScrollUpandDown.cs" />
     <Compile Include="TestCasesClass.cs" />
